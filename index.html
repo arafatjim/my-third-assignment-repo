@@ -57,7 +57,8 @@
                               </div>
                               <div class="lg:navbar-end rounded-3xl  ">
                                         
-                                        <input type="text" placeholder="You can't touch this" class="input input-bordered w-full max-w-xs rounded-full" disabled />
+                                        <input type="text" placeholder="Search" class="input input-bordered w-full max-w-xs rounded-full" disabled />
+
     
                               </div>
                             </div>
@@ -626,13 +627,18 @@
                     <img src="./images/logo.png" alt="">
                     <p class="font-lato900">Fruit Burst</p>
           </div>
-          <div class="grid grid-flow-col gap-4 mx-auto">
-          <a class="link link-hover">Home</a>
-            <a class="link link-hover">About us</a> 
+          <!-- grid grid-flow-col grid-cols-4 text-xs gap-4  w-8/12 mx-auto lg:gap-4 text-lg w-8/12 -->
+          <div class="lg:flex gap-10"> 
+          <div class="flex gap-10">
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover"><span class="inline">About us</span></a> 
             <a class="link link-hover">Shop</a> 
-            <a class="link link-hover">All Fruits</a> 
-            <a class="link link-hover">Support</a>
+            <a class="link link-hover">All Fruits</a>
+          </div> 
+            <div class=" flex gap-10 lg:gap-10">
+              <a class="link link-hover">Support</a>
             <a class="link link-hover">My Account</a>
+            </div>
           </div> 
           <div>
             <div class="grid grid-flow-col gap-8 mx-auto">
