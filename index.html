@@ -24,10 +24,10 @@
 <body>
        <header class="items-center">
           <nav class="items-center gap-40 w-5/6 text-base mx-auto lg:py-10 items-center">
-                    <div class="navbar bg-base-100 bg-[#F85559] rounded-full text-white px-6">
+                    <div class="navbar bg-base-100 bg-[#F85559] rounded-full text-white px-6 flex flex-row-reverse w-12/12">
                               <div class="navbar-center ">
                                 <div class="dropdown">
-                                  <label tabindex="0" class="btn btn-ghost lg:hidden">
+                                  <label tabindex="0" class="btn btn-ghost flex lg:hidden">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                                   </label>
                                   <ul tabindex="0" class="text-lg menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -41,7 +41,7 @@
                                 </div>
                                
                               </div>
-                              <div class="text-lg navbar-start hidden lg:flex">
+                              <div class="text-lg navbar-end text-white hidden lg:flex">
                                 <ul class="menu menu-horizontal px-1 text-lg">
                                   <li><a>Home</a></li>
                                   <li tabindex="0">
@@ -51,11 +51,11 @@
                                   <li><a>All Fruits</a></li>
                                 </ul>
                               </div>
-                              <div class="items-center pr-52"><img class="w-12 h-12" src="./images/logo.png" alt="">
+                              <div class="items-center pr-32"><img class="w-4/12 lg:w-12 h-12" src="./images/logo.png" alt="">
                                         <a class="btn btn-ghost normal-case text-xl font-lato900 text-center pb-1.5 lg:text-5xl">
                                                   Fruit Burst</a>
                               </div>
-                              <div class="lg:navbar-end rounded-3xl  ">
+                              <div class="hidden lg:navbar-end rounded-3xl  ">
                                         
                                         <input type="text" placeholder="Search" class="input input-bordered w-full max-w-xs rounded-full" disabled />
 
@@ -67,7 +67,7 @@
        <main>
           <section class="relative w-10/12 pb-40 pt-10 items-center min-h-screen place-content-center mx-auto">
                     <div class="carousel w-full">
-                              <div id="slide1" class="carousel-item relative w-full">
+                              <div id="slide1" class="w-6/12 lg:carousel-item relative w-full">
                                         <div class="hero min-h-screen" style="background-image: url('./images/team.png');">
                                                   <div class="hero-overlay bg-opacity-60"></div>
                                                   <div class="hero-content text-center text-neutral-content">
@@ -193,9 +193,9 @@
           </section>
           
           <section class="w-10/12 mx-auto">
-            <div class="hero h-80 bg-[#ff7675] my-10">
-              <div class="hero-content flex-col lg:flex-row-reverse">
-                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="hero h-90 bg-[#ff7675] my-10">
+              <div class="hero-content flex-col p-2  lg:flex-row-reverse">
+                <div class="grid gap-2 grid-flow-col pt-5 lg:gap-5 text-center auto-cols-max">
                   <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
                     <span class="countdown font-mono text-5xl">
                       <span style="--value:15;"></span>
@@ -221,8 +221,8 @@
                     sec
                   </div>
                 </div>
-                <div class="text-center lg:text-left">
-                  <h1 class="text-5xl font-bold">Deal of the day</h1>
+                <div class="text-center text-xl pr-8 w-10/12 lg:text-left">
+                  <h1 class="text-2xl lg:text-5xl font-bold">Deal of the day</h1>
                   <p class="py-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                   
                 </div>
@@ -306,38 +306,38 @@
                 <div class="card-actions font-normal">
                        
                   <button class="btn" onclick="my_modal_2.showModal()">Details</button>
-<dialog id="my_modal_2" class="modal w-9/12 mx-auto  items-center pl-5 h-58 lg:w-full">
-<form method="dialog" class="modal-box">
-<div class="card bg-[#17c0eb] text-white items-center bg-base-100 border-solid m-auto pt-10 border-2 border-slate-200 lg:w-80 ">
-<figure class="px-10 pt-10">
-  <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
-</figure>
-<div class="card-body items-center text-center">
-  <h2 class="card-title">12.90$ - 18.85$</h2>
-  <hr class="w-32">
-  <p>Orange</p>
-  <div class="rating">
-          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-          <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-        </div>
-  <div class="card-actions font-normal flex justify-center">
-          <div class="pt-6">
-            
-          <button class="btn btn-error text-white ">Buy Now</button>
-          </div>
-          <div class="modal-action">
-            <!-- if there is a button in form, it will close the modal -->
-            <button class="btn">Close</button>
-          </div>
-  </div>
-</div>
-</div>
-
-</form>
-</dialog> 
+                  <dialog id="my_modal_2" class="modal w-9/12 items-center mx-auto h-58 lg:w-full">
+                    <form method="dialog" class="modal-box">
+                    <div class="card bg-[#17c0eb] w-full text-white items-center bg-base-100 border-solid m-auto pt-10 border-2 border-slate-200 lg:w-80 ">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">12.90$ - 18.85$</h2>
+                      <hr class="w-32">
+                      <p>Orange</p>
+                      <div class="rating">
+                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                      <div class="card-actions font-normal flex justify-center">
+                              <div class="pt-6">
+                                
+                              <button class="btn btn-error text-white ">Buy Now</button>
+                              </div>
+                              <div class="modal-action">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn">Close</button>
+                              </div>
+                      </div>
+                    </div>
+                    </div>
+    
+                    </form>
+                    </dialog> 
 
                 </div>
               </div>
@@ -361,39 +361,38 @@
                 <div class="card-actions font-normal">
                         
                   <button class="btn" onclick="my_modal_3.showModal()">Details</button>
-                  <dialog id="my_modal_3" class="modal w-9/12 mx-auto  items-center pl-5 h-58 lg:w-full">
+                  <dialog id="my_modal_3" class="modal w-9/12 items-center mx-auto h-58 lg:w-full">
                     <form method="dialog" class="modal-box">
-                      <div class="card bg-[#17c0eb] text-white items-center bg-base-100 border-solid m-auto pt-10 border-2 border-slate-200 lg:w-80 ">
-                        <figure class="px-10 pt-10">
-                          <!-- <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" /> -->
-                          <img src="./images/fruit8.png" alt="">
-                        </figure>
-                        <div class="card-body items-center text-center">
-                          <h2 class="card-title">12.90$ - 18.85$</h2>
-                          <hr class="w-32">
-                          <p>Red Dragon</p>
-                          <div class="rating">
-                                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                </div>
-                          <div class="card-actions font-normal flex justify-center">
-                                  <div class="pt-6">
-                                    
-                                  <button class="btn btn-error text-white ">Buy Now</button>
-                                  </div>
-                                  <div class="modal-action">
-                                    <!-- if there is a button in form, it will close the modal -->
-                                    <button class="btn">Close</button>
-                                  </div>
-                          </div>
-                        </div>
+                    <div class="card bg-[#17c0eb] w-full text-white items-center bg-base-100 border-solid m-auto pt-10 border-2 border-slate-200 lg:w-80 ">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">12.90$ - 18.85$</h2>
+                      <hr class="w-32">
+                      <p>Red Dragon</p>
+                      <div class="rating">
+                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                      <div class="card-actions font-normal flex justify-center">
+                              <div class="pt-6">
+                                
+                              <button class="btn btn-error text-white ">Buy Now</button>
+                              </div>
+                              <div class="modal-action">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn">Close</button>
+                              </div>
                       </div>
-                      
+                    </div>
+                    </div>
+    
                     </form>
-                  </dialog>
+                    </dialog>
 
 
                 </div>
@@ -417,39 +416,38 @@
                 <div class="card-actions font-normal">
                        
                   <button class="btn" onclick="my_modal_4.showModal()">Details</button>
-                  <dialog id="my_modal_4" class="modal w-9/12 mx-auto  items-center pl-5 h-58 lg:w-full">
+                  <dialog id="my_modal_4" class="modal w-9/12 items-center mx-auto h-58 lg:w-full">
                     <form method="dialog" class="modal-box">
-                      <div class="card items-center bg-[#17c0eb] text-white border-solid m-auto pt-10 border-2 border-slate-200 lg:w-80 ">
-                        <figure class="px-10 pt-10">
-                          <!-- <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" /> -->
-                          <img src="./images/fruit9.png" alt="">
-                        </figure>
-                        <div class="card-body items-center text-center">
-                          <h2 class="card-title">12.90$ - 18.85$</h2>
-                          <hr class="w-32">
-                          <p>Banana</p>
-                          <div class="rating">
-                                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                  <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                </div>
-                          <div class="card-actions font-normal flex justify-center">
-                                  <div class="pt-6">
-                                    
-                                  <button class="btn btn-error text-white ">Buy Now</button>
-                                  </div>
-                                  <div class="modal-action">
-                                    <!-- if there is a button in form, it will close the modal -->
-                                    <button class="btn">Close</button>
-                                  </div>
-                          </div>
-                        </div>
+                    <div class="card bg-[#17c0eb] w-full text-white items-center bg-base-100 border-solid m-auto pt-10 border-2 border-slate-200 lg:w-80 ">
+                    <figure class="px-10 pt-10">
+                      <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">12.90$ - 18.85$</h2>
+                      <hr class="w-32">
+                      <p>Banana</p>
+                      <div class="rating">
+                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                              <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                      <div class="card-actions font-normal flex justify-center">
+                              <div class="pt-6">
+                                
+                              <button class="btn btn-error text-white ">Buy Now</button>
+                              </div>
+                              <div class="modal-action">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn">Close</button>
+                              </div>
                       </div>
-                      
+                    </div>
+                    </div>
+    
                     </form>
-                  </dialog>
+                    </dialog>
                   
                 </div>
               </div>
@@ -645,7 +643,7 @@
               </div>
             </div>
            </section>
-
+<!-- time zone -->
            <section class="items-center text-center pt-20">
                     <h1 class="text-5xl font-lato900">Why Choose Us</h1>
                     <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
